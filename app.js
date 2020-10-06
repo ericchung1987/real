@@ -1,3 +1,5 @@
+const http = require('http');
+const port = process.env.PORT || 3000
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -11,8 +13,10 @@ app.get("/", function(req, res){
     res.render("index.ejs");
 });
 
-app.listen(3000, function(){
-    console.log("Server started on port 3000");
-});
-
-
+// const server = http.createServer((req, res) => {
+//     res.render("index.ejs");
+//   });
+  
+app.listen(port,() => {
+    console.log(`Server running at port `+port);
+  });
