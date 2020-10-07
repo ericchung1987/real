@@ -13,6 +13,10 @@ app.get("/", function(req, res){
     res.render("index.ejs");
 });
 
+app.get("/registration", function(req, res){
+    res.render("registration.ejs")
+})
+
 // const server = http.createServer((req, res) => {
 //     res.render("index.ejs");
 //   });
