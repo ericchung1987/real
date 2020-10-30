@@ -17,6 +17,10 @@ app.get("/registration", function(req, res){
     res.render("registration.ejs")
 })
 
+app.get("/cal", function(req, res){
+    res.render("cal.ejs")
+})
+
 // const server = http.createServer((req, res) => {
 //     res.render("index.ejs");
 //   });
